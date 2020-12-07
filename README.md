@@ -38,6 +38,7 @@ void redisClusterFree(redisClusterContext *cc);
 
 int redisClusterSetOptionAddNode(redisClusterContext *cc, const char *addr);
 int redisClusterSetOptionAddNodes(redisClusterContext *cc, const char *addrs);
+int redisClusterSetOptionAuthPassword(redisClusterContext *cc, const char *password);
 int redisClusterSetOptionConnectBlock(redisClusterContext *cc);
 int redisClusterSetOptionConnectNonBlock(redisClusterContext *cc);
 int redisClusterSetOptionParseSlaves(redisClusterContext *cc);
